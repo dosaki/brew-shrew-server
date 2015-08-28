@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('mysql://root:root@localhost:3306/brewshrew');
+var sequelize = new Sequelize('mysql://shrew:shrewpw@localhost:3306/brewshrew');
 
 var Brewer = sequelize.define('Brewer', {
   name: {
