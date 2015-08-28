@@ -45,7 +45,7 @@ function brewer(response, data) {
       response.write("");
     }
     else{
-      response.write(brewer);
+      response.write(brewer.name);
     }
     response.end();
   });
