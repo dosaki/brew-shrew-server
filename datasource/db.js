@@ -4,7 +4,7 @@ var sequelize = new Sequelize('mysql://shrew:shrewpw@localhost:3306/brewshrew');
 var Brewer = sequelize.define('Brewer', {
   name: {
     type: Sequelize.STRING,
-    field: 'brewer'
+    field: 'name'
   }
 });
 

@@ -53,7 +53,7 @@ function saveBrewRequest(brew, name){
 function getBrewer(callback){
   return Brewer.findOne().then(
     function(brewer){
-      callback(brewer);
+      callback(brewer || "");
     });
 }
 

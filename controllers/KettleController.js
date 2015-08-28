@@ -41,7 +41,12 @@ function turnOn(response, data) {
 function brewer(response, data) {
   kettleService.getBrewer(function(brewer){
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.write(brewer.name);
+    if(isEmpty(brewer)){
+      response.write("");
+    }
+    else{
+      response.write(brewer);
+    }
     response.end();
   });
 }
