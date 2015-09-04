@@ -6,7 +6,11 @@ var kettle = require("./controllers/KettleController");
 var handle = {}
 handle["/"] = index.start;
 handle["/favicon.ico"] = index.favicon;
-handle["/start"] = index.start;
+handle["/requestList"] = index.start;
+handle["/makeRequest"] = index.makeRequest;
+handle["/styles.css"] = index.styles;
+handle["/cookies.js"] = index.cookies;
+handle["/brewRequester.js"] = index.brewRequester;
 
 //Kettle stuff
 handle["/kettle/addBrew"] = kettle.addBrew;

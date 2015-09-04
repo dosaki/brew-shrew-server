@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Feel like having a drink?</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+
+
+  <body>
+    <div id="container">
+      <div id="messages" class="messages" style="display:none;"></div>
+      <h3>Feel like having a brew, <input id="personName" type="text" value="" placeholder="Annonymous" class="nameInput"/>?</h3>
+      <div id="favourites">
+        <h4 id="usualsTitle">The usual</h4>
+        <div id="usuals">
+        </div>
+        <button id="clearFavBtn">Clear All</button>
+      </div>
+
+      <div id="adhoc">
+        <h4>Something new?</h4>
+        <div id="new">
+          <input id="newBrewInput" type="text" value="" placeholder="Black coffee, 2 sweetners" class="newbrew"/> <button id="askBrew">Ask</button> <button id="addFavBtn">Add</button>
+        </div>
+      </div>
+
+      <div id="make">
+        <h4>Or are you going to <button id="prepareKettle" disabled>turn the kettle on</button>?</h4>
+      </div>
+    </div>
+
+    <script src="cookies.js"></script>
+    <script src="brewRequester.js"></script>
+  </body>
+</html>
