@@ -1,4 +1,4 @@
-var _domain = "http://localhost";
+var _domain = "http://95.85.44.66";
 var _oneYear = 31556926;
 var _delimiter = "$$!,!$$";
 var _cookieDrinks = "favDrinks";
